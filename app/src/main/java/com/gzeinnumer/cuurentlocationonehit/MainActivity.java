@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
         if (currentLocationInterval.getmCurrentLocation() != null) {
             binding.txtLocationResult.setText("Lat: " + currentLocationInterval.getmCurrentLocation().getLatitude() + ", " + "Lng: " + currentLocationInterval.getmCurrentLocation().getLongitude() + "\n"+ currentLocationInterval.getmLastUpdateTime());
 
+            lati = currentLocationOneHit.getmCurrentLocation().getLatitude();
+            longi = currentLocationOneHit.getmCurrentLocation().getLongitude();
+            
             // giving a blink animation on TextView
             binding.txtLocationResult.setAlpha(0);
             binding.txtLocationResult.animate().alpha(1).setDuration(300);
@@ -53,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
         if (currentLocationOneHit.getmCurrentLocation() != null) {
             binding.txtLocationResult.setText("Lat: " + currentLocationOneHit.getmCurrentLocation().getLatitude() + ", " + "Lng: " + currentLocationOneHit.getmCurrentLocation().getLongitude());
 
+            lati = currentLocationOneHit.getmCurrentLocation().getLatitude();
+            longi = currentLocationOneHit.getmCurrentLocation().getLongitude();
+            
             // giving a blink animation on TextView
             binding.txtLocationResult.setAlpha(0);
             binding.txtLocationResult.animate().alpha(1).setDuration(300);
