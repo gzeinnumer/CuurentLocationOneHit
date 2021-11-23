@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
 //        initInterval();
     }
 
+    private double lati;
+    private double longi;
+    
     private GetCurrentLocationInterval currentLocationInterval;
     private void initInterval() {
         currentLocationInterval = new GetCurrentLocationInterval(MainActivity.this, this::updateLocationUIInterval);
